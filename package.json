@@ -1,0 +1,38 @@
+{
+  "name": "techinnover-test",
+  "version": "1.0.0",
+  "description": "backend interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc && cp package.json ./build/package.json",
+    "start": "node build/index.js"
+  },
+  "author": "Ayeni Busayo",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/node": "^16.11.1",
+    "mysql2": "^2.3.2",
+    "nodemon": "^2.0.13",
+    "rimraf": "^3.0.2",
+    "sequelize": "^6.7.0",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "env-var": "^7.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "sequelize-auto": "^0.8.5",
+    "sequelize-typescript": "^2.1.1",
+    "springedge": "^1.0.0",
+    "swagger-ui-express": "^4.1.6"
+  }
+}
